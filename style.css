@@ -1,0 +1,105 @@
+body{
+    font-family: "Garamond", serif;
+}
+.row { 
+    display: flex; 
+    flex-direction: row;
+}
+
+.cloud {
+    padding: 30px;
+    font-size: 20pt;
+    animation: float 7s ease-in-out infinite;
+    position: relative;  
+}
+
+.closer {
+padding-inline: 1px;
+}
+
+@keyframes float{
+0% { left: -10px;}
+50% { left: 10px;}
+100% { left: -10px;}
+}
+
+.d1 { 
+    animation-delay: 250ms;
+}
+
+.d2 {
+    animation-delay: 650ms;
+}
+
+.d3 {
+    animation-delay: 1.2s;
+}
+
+#sky {
+    margin:auto; 
+    width: 100%;
+    height: 39em; 
+    background-color: #aed9e0;
+    color: #778da9;
+    padding-inline: 150px;   
+} 
+
+#garden{
+    margin:auto;
+    top: 39em;
+    position: absolute;
+    width: 100%;
+    height: 40em;
+    background-color:#588157;
+    padding-inline: 150px;
+}  
+.ground{
+    top: -54px;
+    padding: 30px;
+    font-size: 20pt;  
+    color: #1a4301;
+    position: relative;
+}
+
+.hole{
+    font-size: 40px;
+    position: relative;
+    top: -35px;
+    font-weight: bolder;
+    color: #00b4d8;
+}
+
+.drip {
+    animation: dripping 1s linear infinite;
+    color: #00b4d8;
+    position: relative;
+    padding: 30px;
+}
+
+
+@keyframes dripping{
+    0% { top: -70px;}
+    100% { top: 300px;}
+    }
+
+.small {
+font-size: 4pt;
+}
+.medium{ 
+font-size: 14pt;
+}
+.large{
+    font-size: 20pt;
+}
+
+.d4{
+    animation-delay: 0.5s;
+}
+
+.d5{
+    animation-delay: 0.2s;
+}
+
+.d6{
+    animation-delay: 0.4s;
+}
