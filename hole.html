@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>happiness</title>
+        <link rel="stylesheet" href="hole.css">
+    </head>
+
+    <body>
+        <script type="text/javascript">
+            const audio = new Audio();
+            audio.src = "./penpal.mp3";
+
+        function enable(){
+            const buryit = document.getElementById("burial-form");
+            buryit.style.visibility = "visible";
+        }
+
+        function disable(){
+            const buryit = document.getElementById("burial-form");
+            buryit.style.visibility = "hidden";
+            const field = document.getElementById("secrets");
+            field.value = "";
+        }    
+        </script>
+
+<p class="word w3">drop</p>
+<a href="https://www.youtube.com/watch?v=g5PEpiQs54E"><p class="word w2 floaty link">cloud</p></a>         
+<a href="index.html"><p class="word w4 floaty surface">Surface</p></a>
+<p class="word w1 floaty">cloud</p>
+<p class="word w6">drop</p>
+<p onmouseover="audio.play()" onmouseout="audio.pause()" class="word w8 floaty link">cloud</p>
+<p class="word w5 floaty">cloud</p>
+<p class="word w7 floaty link">cloud</p></a>
+<p onclick="enable()" class="word w11">Dig it up</p>
+<a href="gif.html"><p class="word w9">drop</p></a>         
+<p class="word w10">drop</p>
+<a href="https://youtu.be/NKfWzqLElyo?t=5"><p class="word w12 floaty link">cloud</p></a>
+<p class="word w13">cloud</p>
+<p class="word w14 floaty">drop</p>
+<div class="oval h1"></div>
+
+<div id="burial-form">
+    <input type="text" name="secrets" id="secrets" placeholder="Bury your secrets here">
+    <button id="bury-btn" onclick="disable()">Bury</button>
+</div>
+
+    </body>
+</html>
